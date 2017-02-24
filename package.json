@@ -8,16 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GustavoNZ/tga.git"
+    "url": "git+https://github.com/GustavoNZ/tg.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GustavoNZ/tga/issues"
+    "url": "https://github.com/GustavoNZ/tg/issues"
   },
-  "homepage": "https://github.com/GustavoNZ/tga#readme",
+  "homepage": "https://github.com/GustavoNZ/tg#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "gulp": "^3.9.1"
   }
 }
