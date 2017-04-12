@@ -14,11 +14,10 @@ header
 
 	.logo
 		float: left
-		margin: 30px 0 0
+		margin: 30px 0 0 
 		img
 			width: 70px
 			height: 35px
-
 
 	.links
 		float: right
@@ -42,6 +41,19 @@ header
 					a
 						color: $branco
 						text-transform: uppercase
+
+						&:hover
+							&:after
+								width: 40%
+
+						&:after
+							content: ""
+							display: table
+							margin: 5px auto 0
+							width: 0%
+							height: 2px
+							background-color: $branco
+							+transition(.3s)
 
 		.social
 			li
@@ -67,7 +79,7 @@ header
 		display: table
 		+breakpoint($celular)
 			+font-size(40px)
-
+			
 	h1,
 	p
 		color: $branco
