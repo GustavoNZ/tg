@@ -9,96 +9,128 @@
 	<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-	<header>
-		<div class="container">
-			<div class="logo">
-				<a href="index.html">
-				<img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
-				</a>
-			</div>
-			
-			<div class="links">
-				<nav>
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfólio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
-
-				<ul class="social">
-					<li>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-					</li>
-					<li>
-						<a href="#"><i class="fa fa-github-alt"></i></a>
-					</li>
-				</ul>
-			</div>
-
-			<h1><strong>Gustavo </strong> J. <strong>Santos</strong></h1>
-			
-			<p>Code // Share // Reboot</p>
-
-		</div>
+	
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="sobre.html">Sobre</a></li>
+			<li><a href="portfolio.html">Portfólio</a></li>
+			<li><a href="contato.html">Contato</a></li>
+		</ul>
+	</nav>
 
 
-	</header>
-		
-	<main>
-		<section class="sobre">
-
+	<div class="layout">
+		<header>
 			<div class="container">
-
-				<div class="itens">
-
-					<div class="foto">
-						<img src="images/foto-tag-miolo.png" alt="Foto TAG">
-					</div>
-
-					<div class="icone-lapis">
-						<i class="fa fa-pencil"></i>
-					</div>
-
-					<div class="icone-codigo">
-						<i class="fa fa-code"></i>
-					</div>
-
-					<div class="icone-coracao">
-						<i class="fa fa-heart"></i>
-					</div>
-
-					<div class="icone-compartilhar">
-						<i class="fa fa-share-alt"></i>
-					</div>
-
+				<div class="logo">
+					<a href="index.html">
+					<img src="images/logo-tag-topo.svg" alt="Logo Topo Tag">
+					</a>
 				</div>
 				
-				<div class="textos">
+				<div class="links">
+					<nav>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="portfolio.html">Portfólio</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					</nav>
 
-					<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Similique modi eum provident vitae impedit minus. Aliquam nostrum repudiandae consequatur voluptates! Quas, nostrum consectetur praesentium repellat maiores autem! Doloremque, inventore, asperiores.</p>
+					<a class="toggle" href="javascript:;">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
 
-					<a href="#" class="botao medio"><i class="fa fa-eye"></i> Continue Lendo</a>
-
+					<ul class="social">
+						<li>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-github-alt"></i></a>
+						</li>
+					</ul>
 				</div>
+
+				<h1><strong>Gustavo </strong> J. <strong>Santos</strong></h1>
 				
+				<p>Code // Share // Reboot</p>
+
 			</div>
 
-		</section>
 
-	</main>
+		</header>
+			
+		<main>
+			<section class="sobre">
 
-	<footer>
-		
-		<div class="logo-rodape">
-			<a href="index.html">
-				<img src="images/logo-tag-rodape.svg" alt="Logo TAG Rodapé">
-			</a>
+				<div class="container">
 
-			<p>2016 Todos os Direitos Reservados.</p>
-		</div>
+					<div class="itens">
 
-	</footer>
+						<div class="foto">
+							<img src="images/foto-tag-miolo.png" alt="Foto TAG">
+						</div>
+
+						<div class="icone-lapis">
+							<i class="fa fa-pencil"></i>
+						</div>
+
+						<div class="icone-codigo">
+							<i class="fa fa-code"></i>
+						</div>
+
+						<div class="icone-coracao">
+							<i class="fa fa-heart"></i>
+						</div>
+
+						<div class="icone-compartilhar">
+							<i class="fa fa-share-alt"></i>
+						</div>
+
+					</div>
+					
+					<div class="textos">
+
+						<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Similique modi eum provident vitae impedit minus. Aliquam nostrum repudiandae consequatur voluptates! Quas, nostrum consectetur praesentium repellat maiores autem! Doloremque, inventore, asperiores.</p>
+
+						<a href="#" class="botao medio"><i class="fa fa-eye"></i> Continue Lendo</a>
+
+					</div>
+					
+				</div>
+
+			</section>
+
+		</main>
+
+		<footer>
+			
+			<div class="logo-rodape">
+				<a href="index.html">
+					<img src="images/logo-tag-rodape.svg" alt="Logo TAG Rodapé">
+				</a>
+
+				<p>2016 Todos os Direitos Reservados.</p>
+			</div>
+
+		</footer>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+	<script>
+		$(function(){
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+		});
+	</script>
+
 </body>
 </html>
